@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Tech T Repairs</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="static/techt.css" rel="stylesheet">
+  </head>
+  
+  <style type="text/css">
+    
+    body{
+      padding-top:40px;
+    }
+    
+  </style>
+  
+
+  <body>
+    
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- NAVBAR
+================================================== -->
+    <div class="container">
+      <div class="navbar-wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top-right"> 
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span><!---by having this three times it will show the the icon with 3 lines when in the mini view-->
+              </button>
+              <a class="navbar-brand" href="techtrepairs.html"><img src="images/logo.png" alt="Tech T Repairs"></a>
+  
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav"> 
+                <li class="active"><a href="techtrepairs.html">Home</a></li>
+                <li><a href="techtrepairs.html#aboutus">About Us</a></li>
+                <li><a href="techtrepairs.html#services">Services</a></li>
+                <li><a href="techtrepairs.html#previousrepairs">Previous Repairs</a></li>
+                <li><a href="techtrepairs.html#pricing">Pricing</a></li>
+                <li><a href="techtrepairs.html#contactus">Contact Us</a></li>
+               <li><a href="testimonials.html">Testimonials</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+<div class="jumbotron text-center">
+  <h1>Tech T Repairs</h1> 
+    <p>What our customers say about us</p>
+  </div>
+    
+  
+
+  <div id="testimonials" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- Contact us section -->
+<div id="contactus" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT US</h2>
+      
+{% extends 'bootstrap/base.html' %}
+      
+{% block content %}
+ <div class="container">
+   <form action="" method="post">
+     <div class="form-group">
+       <label for="nameId">Name:</label>
+       <input type="text" name="name" id="nameId" class="formcontrol"placeholder="Name">
+       <label for="emailId">E-Mail:</label>
+       <input type="text" name="email" id="emailId" class="formcontrol"placeholder="example@example.com">
+         </div>
+         <div class="form-group">
+           <label for="commentsId">Your Message:</label>
+           <textarea name="comments" id="commentsId" rows="8"class="form-control"></textarea>
+           </div>
+           <button type="submit" class="btn btndefault">Submit</button>
+             </form>
+           </div>
+{% endblock %}
+
+
+  <div class="row">
+    <div class="text-center">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Tech T Repairs, High Street, Aylesbury, Buckinghamshire, HP20 1SE</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +44 7985 233 800</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> techtrepairs@gmail.com</p>	   
+    </div>
+    <div class="col-sm-4 col-xs-12 slideanim">
+    
+        </div>
+      </div>	
+    </div>
+  </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+
+   
+
+      <!-- FOOTER -->
+      <footer class="container-fluid text-center">
+      <a href="#" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Tech T Repairs &copy; 2016</a></p>	
+      <!-- Facebook like and share buttons -->
+      <div class="fb-follow" data-href="https://www.facebook.com/techtaylesbury" data-layout="standard" data-show-faces="true"></div>
+      <div class="fb-share-button" data-href="https://facebook.com/techtaylesbury" data-layout="button_count" data-mobile-iframe="true"></div>
+      <!-- Instagram page link -->
+      <style>.ig-b- { display: inline-block; }
+      .ig-b- img { visibility: hidden; }
+      .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+      .ig-b-v-24 { width: 137px; height: 24px; background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
+      <a href="https://www.instagram.com/techtrepairs/?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
+      </footer>
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="moreless.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
+    

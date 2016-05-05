@@ -1,0 +1,19 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}
+    Tech T Testimonials
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {{ wtf.quick_form(form) }}
+
+        {% if name %}
+            <p> Your name is: {{ name }}</p>
+            <p>and your message is: {{ comments }}</p>
+            <p>Thank you from the Tech T Repairs team for your feedback!</p>
+        {% endif %}
+    </div>
+
+{% endblock %}
