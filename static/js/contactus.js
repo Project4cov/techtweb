@@ -23,7 +23,7 @@ $(document).ready(function(){
         $.ajax({"url": '/contactus', "method": "post", "data":params, "dataType": 'json'})
             .done(function(response){
                 
-                // response['things']
+                
                 
                 
                 alert(response['message']);

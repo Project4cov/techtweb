@@ -11,6 +11,12 @@ import json
 DATABASE = 'messages.db'
 
 app = Flask(__name__)
+app.config.update(dict(
+    DATABASE=os.path.join(app.root_path, 'comments.db'),
+    SECRET_KEY='development key'
+    ))
+Bootstrap(app)
+
 
 app.debug = True
 
@@ -71,7 +77,10 @@ def contactus():
         
         response = {"message": "Thank you for getting in touch, someone from our team will get into contact shortly"}
         
-        
+   
+         
+        return json.dumps(response)
+            
         
     else:
         return render_template('contactus.html')
