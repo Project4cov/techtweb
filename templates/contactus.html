@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="static/techt.css" rel="stylesheet">
+    <link href="/static/css/techt.css" rel="stylesheet">
   </head>
   
   <style type="text/css">
@@ -48,18 +48,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span><!---by having this three times it will show the the icon with 3 lines when in the mini view-->
               </button>
-              <a class="navbar-brand" href="techtrepairs.html"><img src="images/logo.png" alt="Tech T Repairs"></a>
+              <a class="navbar-brand" href="/"><img src="/static/images/logo.png" alt="Tech T Repairs"></a>
   
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav"> 
-                <li class="active"><a href="techtrepairs.html">Home</a></li>
-                <li><a href="techtrepairs.html#aboutus">About Us</a></li>
-                <li><a href="techtrepairs.html#services">Services</a></li>
-                <li><a href="techtrepairs.html#previousrepairs">Previous Repairs</a></li>
-                <li><a href="techtrepairs.html#pricing">Pricing</a></li>
-                <li><a href="techtrepairs.html#contactus">Contact Us</a></li>
-               <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/previousrepairs">Previous Repairs</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/contactus">Contact Us</a></li>
+               <li><a href="/testimonials">Testimonials</a></li>
               </ul>
             </div>
           </div>
@@ -68,74 +68,16 @@
       </div>
     </div>
 
-<div class="jumbotron text-center">
-  <h1>Tech T Repairs</h1> 
-    <p>What our customers say about us</p>
-  </div>
-    
-  
-
-  <div id="testimonials" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-
 <!-- Contact us section -->
 <div id="contactus" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT US</h2>
       
-{% extends 'bootstrap/base.html' %}
-      
-{% block content %}
- <div class="container">
-   <form action="" method="post">
-     <div class="form-group">
-       <label for="nameId">Name:</label>
-       <input type="text" name="name" id="nameId" class="formcontrol"placeholder="Name">
-       <label for="emailId">E-Mail:</label>
-       <input type="text" name="email" id="emailId" class="formcontrol"placeholder="example@example.com">
-         </div>
-         <div class="form-group">
-           <label for="commentsId">Your Message:</label>
-           <textarea name="comments" id="commentsId" rows="8"class="form-control"></textarea>
-           </div>
-           <button type="submit" class="btn btndefault">Submit</button>
-             </form>
-           </div>
-{% endblock %}
+
 
 
   <div class="row">
     <div class="text-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.4262026918864!2d-0.8091739537827884!3d51.81664437175656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876f7af338ad9f7%3A0xd0ed794a4366bb73!2sHigh+St%2C+Aylesbury%2C+Buckinghamshire+HP20%2C+UK!5e0!3m2!1sen!2sin!4v1458251346465" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       <p>Contact us and we'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Tech T Repairs, High Street, Aylesbury, Buckinghamshire, HP20 1SE</p>
       <p><span class="glyphicon glyphicon-phone"></span> +44 7985 233 800</p>
@@ -149,17 +91,20 @@
   </div>
 </div>
 
+
+
+
 <div id="googleMap" style="height:400px;width:100%;"></div>
 
-<!-- Add Google Maps -->
+<!-- Add Google Maps from w3schools -->
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var myCenter = new google.maps.LatLng(51.81681,	-0.80947);
 
 function initialize() {
 var mapProp = {
   center:myCenter,
-  zoom:12,
+  zoom:15,
   scrollwheel:false,
   draggable:false,
   mapTypeId:google.maps.MapTypeId.ROADMAP
@@ -178,10 +123,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 
-
-
-
-   
 
       <!-- FOOTER -->
       <footer class="container-fluid text-center">

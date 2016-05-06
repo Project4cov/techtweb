@@ -11,7 +11,7 @@ Bootstrap(app)
 
 class CommentForm(Form):
     name = StringField('Name:', validators=[DataRequired()])
-    message = TextAreaField('Comments', validators=[DataRequired(), Length(min=3, max=10)])
+    message = TextAreaField('Comments', validators=[DataRequired(), Length(min=3, max=450)])
     submit = SubmitField('Submit')
 
 

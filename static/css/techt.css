@@ -132,3 +132,8 @@ textarea {
   height: 30px;
   display: block;
 }
+.googleMap{
+  margin-left: 50%;
+  width: 125px;
+  height: 30px;
+}
